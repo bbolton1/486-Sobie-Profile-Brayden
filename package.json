@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "node": "^22.13.0",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "render": "^0.1.4"
   },
   "name": "486-sobie-profile-brayden",
   "version": "1.0.0",
