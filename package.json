@@ -1,9 +1,11 @@
 {
   "dependencies": {
     "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "node": "^22.13.0",
+    "mongodb": "^6.12.0",
+    "node": "^22.13.1",
     "nodemon": "^3.1.9",
     "render": "^0.1.4"
   },
