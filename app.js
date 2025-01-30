@@ -22,6 +22,8 @@ const client = new MongoClient(uri, {
   }
 });
 
+//console.log(shajs('sha256').update())
+
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
@@ -34,9 +36,33 @@ async function run() {
     await client.close();
   }
 }
-run().catch(console.dir);
+//run().catch(console.dir);
 
+async function getData() {
 
+  await client.connect();
+  let collection = await client.db("rock-song-database").collection("rock-song-names");
+
+  //let collection = await db.collection("posts");
+  let results = await collection.find({}).toArray();
+    //.limit(50)
+    //.toArray();
+
+  console.log(results);
+
+  return results;
+
+}
+
+app.get('/read', async function (req,res) {
+  let getDataResults = await getData();
+  console.log(getDataResults);
+
+  res.render('songs',
+    {songData : getDataResults});
+
+  //res.send(getDataResults);
+})
 
 // begin all middleware
 
