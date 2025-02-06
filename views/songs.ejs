@@ -1,4 +1,20 @@
 <h1> Songs </h1>
 
-<%=songData[0].song_name%> <br/>
-<%=songData[1].song_name%>
+<%=songData[0].song_name%>
+
+<form method="POST" action="/delete/<%=songData[0]._id%>">
+    <p>action="/delete/<%=songData[0]._id%>"</p>
+    <input type="submit" value="delete first song">
+</form>
+
+<form method="POST" action="/update">
+    <input type="hidden" name="nameID" value="<%=songData[0]._id%>">
+    <input name="inputUpdateName">
+    <input type="submit" value="update first song">
+</form>
+
+<!-- <a href="/insert">insert hard code value</a> -->
+<form method="GET" action="/insert">
+    <input name="myName">
+    <input type="submit" value="insert a song">
+</form>
