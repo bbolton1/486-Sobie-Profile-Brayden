@@ -1,1 +1,1 @@
-Personal page about my music tastes where you can submit song recommendations for me. It utilizes CRUD capable input fields and stores everything in a mongodb database using Atlas.
+Personal page about my music tastes where you can submit song recommendations for me. It utilizes CRUD capable fields and stores everything in a mongodb database using Atlas and publicly hosted on Render.
