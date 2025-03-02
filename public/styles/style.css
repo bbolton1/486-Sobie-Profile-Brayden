@@ -56,27 +56,6 @@ input {
   text-decoration: underline;
 }
 
-/* feeter */
-.foot {
-  padding: 10px 0;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); 
-  width: auto; 
-}
-
-.foot a {
-  margin: 0 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.foot a:hover {
-  text-decoration: underline;
-}
-
 .delete {
   display: flex;
   justify-content: flex-end;
